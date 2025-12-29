@@ -4,7 +4,8 @@ body {
     font-weight: 100;
     max-width: 100%;
     background-color: rgb(17, 16, 16);
-    color: rgb(252, 205, 135);
+    /* color: rgb(252, 205, 135); */
+    color: rgba(196, 156, 64, 1);
     margin: 0;
     padding: 0;
 }
@@ -16,14 +17,21 @@ a {
 
 
 h1 {
-    font-family: 'Encode Sans Expanded', sans-serif;
+    /* font-family: 'Encode Sans Expanded', sans-serif; */
+    font-family: 'Hepta Slab', serif;
     font-weight: 250;
     font-size: 2.5rem;
 }
 
 h2 {
-    font-family: 'Encode Sans Expanded', sans-serif;
+    /* font-family: 'Encode Sans Expanded', sans-serif; */
+    font-family: 'Hepta Slab', serif;
     font-weight: 200;
+}
+
+p {
+    font-family: 'Hepta Slab', serif;
+    font-weight: 300;
 }
 
 .logo-accent {
