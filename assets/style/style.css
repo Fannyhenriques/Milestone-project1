@@ -1,11 +1,15 @@
+:root {
+    /* base color   */
+    --color-background: rgb(12, 12, 12);
+    /* text/highlights/borders */
+    --color-primary: rgba(196, 156, 64, 1);
+    --color-primary-hover: #f8b65b;
+    --color-secondary: rgba(255, 255, 255, 1);
+    --color-secondary-hover: rgba(255, 255, 255, 0.885);
+}
+
 body {
-    text-align: center;
-    font-family: 'Encode Sans Expanded', sans-serif;
-    font-weight: 100;
-    max-width: 100%;
-    background-color: rgb(17, 16, 16);
-    /* color: rgb(252, 205, 135); */
-    color: rgba(196, 156, 64, 1);
+    font-family: 'Hepta Slab', serif;
     margin: 0;
     padding: 0;
 }
@@ -17,14 +21,12 @@ a {
 
 
 h1 {
-    /* font-family: 'Encode Sans Expanded', sans-serif; */
     font-family: 'Hepta Slab', serif;
-    font-weight: 250;
+    font-weight: 300;
     font-size: 2.5rem;
 }
 
 h2 {
-    /* font-family: 'Encode Sans Expanded', sans-serif; */
     font-family: 'Hepta Slab', serif;
     font-weight: 200;
 }
@@ -32,6 +34,8 @@ h2 {
 p {
     font-family: 'Hepta Slab', serif;
     font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+
 }
 
 .logo-accent {
@@ -43,7 +47,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
     background-color: rgb(12, 12, 12);
     position: sticky;
     border-bottom: 1px solid rgb(252, 205, 135);
