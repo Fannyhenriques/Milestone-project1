@@ -100,11 +100,9 @@ nav {
     justify-content: center;
     gap: 4rem;
     align-items: center;
-    width: 80%;
-}
-
-.intro>div {
-    flex: 1;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
 }
 
 .intro-text-container,
@@ -113,13 +111,14 @@ nav {
 }
 
 .intro-text {
-    /* max-width: 30rem;
-    margin: 0 auto; */
+    max-width: 30rem;
+    line-height: 190%;
 }
 
 .intro-img {
     flex: 1;
-    max-width: 100%;
-    height: auto;
+    max-width: 50%;
+    height: 500px;
     object-fit: cover;
+    border-radius: 0.3rem;
 }
