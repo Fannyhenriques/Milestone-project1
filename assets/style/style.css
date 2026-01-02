@@ -3,7 +3,7 @@
     --color-background: rgb(12, 12, 12);
     /* text/highlights/borders */
     --color-primary: rgba(196, 156, 64, 1);
-    --color-primary-hover: #fca84e;
+    --color-primary-hover: #edc193;
     --color-secondary: rgba(255, 255, 255, 1);
     --color-secondary-hover: rgba(255, 255, 255, 0.885);
 }
@@ -15,6 +15,13 @@ body {
     background-color: var(--color-background);
     color: var(--color-primary);
     line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-background);
 }
 
 h1 {
@@ -48,13 +55,18 @@ a {
     font-size: 1rem;
 }
 
-a:hover {
+nav a:hover {
     color: var(--color-primary-hover);
 }
 
 .navlink-res {
     border: 1px solid var(--color-primary);
     padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
 }
 
 .logo-accent {
@@ -65,15 +77,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 2rem;
-    top: 0;
-    position: sticky;
+    padding: 0 3rem;
     border-bottom: 1px solid var(--color-primary);
-}
-
-nav {
-    display: flex;
-    gap: 1rem;
 }
 
 .hero-container {
@@ -103,9 +108,9 @@ nav {
 .intro {
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 6rem;
     align-items: center;
-    max-width: 90%;
+    max-width: 100%;
     margin: 5rem auto 0;
 
 }
@@ -116,13 +121,13 @@ nav {
 }
 
 .intro-text {
-    max-width: 25rem;
+    max-width: 30rem;
 }
 
 .intro-img {
     flex: 1;
     max-width: 35%;
-    height: 450px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -135,17 +140,22 @@ nav {
     margin-top: 2rem;
     padding: 1rem;
     text-align: center;
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
 }
 
 .btn {
     border: 1px solid var(--color-primary);
-    background-color: var(--color-primary);
-    color: var(--color-background);
     padding: 1rem;
     margin: 1rem;
     display: inline-flex;
     width: 10rem;
     justify-content: center;
+}
+
+.btn-primary {
+    color: var(--color-background);
+    background-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
 }
