@@ -259,3 +259,7 @@ nav {
     display: block;
     border: 0;
 }
+
+.reservation-info {
+    padding: 2rem;
+}
