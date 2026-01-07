@@ -38,6 +38,7 @@
     h2 {
         font-size: 2rem;
         font-weight: 200;
+        margin-bottom: 1rem;
     }
 
     h3 {
@@ -61,7 +62,6 @@
         padding: 0.5rem;
         font-size: 1rem;
     }
-
 }
 
 @layer component {
@@ -135,55 +135,17 @@
         @apply lg:flex-row lg:gap-4;
     }
 
-    .intro {
-        display: flex;
-        justify-content: center;
-        gap: 6rem;
-        align-items: center;
-        max-width: 100%;
-        margin: 5rem auto 0;
-
-    }
-
-    .intro-text-container,
-    .intro-img-container {
-        flex: 1;
-    }
-
-    .intro-text {
-        max-width: 30rem;
-    }
-
-    .intro-img {
-        flex: 1;
-        max-width: 35%;
-        height: 500px;
-        object-fit: cover;
-    }
-
-    .intro--reverse {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
     .btn-container {
-        margin-top: 1rem;
-        padding: 1rem;
-        text-align: center;
+        @apply mt-4 p-4 text-center;
     }
 
     .btn {
-        border: 1px solid var(--color-primary);
-        padding: 1rem;
-        margin: 1rem;
-        display: inline-flex;
-        width: 14rem;
-        justify-content: center;
-        text-transform: uppercase;
+        @apply inline-flex justify-center uppercase m-4 w-56 p-4 border;
+        border-color: var(--color-primary);
     }
 
     .btn-primary {
-        color: var(--color-background);
+        @apply text-[var(--color-background)];
         background-color: var(--color-primary);
     }
 
@@ -201,94 +163,99 @@
         color: var(--color-background);
     }
 
-    button {
-        font-family: 'Hepta Slab', serif;
+    .reservation-btn {
+        @apply lg:m-16;
     }
 
-    .reservation-btn {
-        margin: 4rem;
+    .intro {
+        @apply flex flex-col items-center gap-10 mt-12;
+
+        @apply lg:flex-row lg:justify-center lg:items-center lg:gap-24 lg:max-w-full lg:mt-20 lg:mx-auto;
+    }
+
+    .intro-text-container,
+    .intro-img-container {
+        @apply w-full max-w-[90%] flex justify-center px-4;
+
+        @apply lg:flex-1;
+    }
+
+    .intro-text {
+        @apply max-w-full text-center;
+
+        @apply lg:max-w-[30rem];
+    }
+
+    .intro-img {
+        @apply w-full max-w-[420px] aspect-square object-cover mx-auto;
+
+        @apply lg:flex-1 lg:max-w-[35%] lg:h-[500px] lg:w-auto lg:aspect-auto lg:mx-0;
+    }
+
+    .intro--reverse {
+        @apply lg:flex lg:flex-row-reverse;
     }
 
     .content-box {
-        margin: 0 auto;
-        text-align: center;
-        max-width: 70%;
-        padding: 2rem;
+        @apply mx-auto text-left max-w-[90%] p-8;
+        @apply lg:max-w-[70%] lg:text-center;
     }
 
     .content-box img {
-        max-width: 100%;
-        height: 60vh;
-        padding-top: 4rem;
+        @apply max-w-full pt-16 h-auto mx-auto;
+        @apply lg:h-[60vh]
     }
-}
 
 
-.contact-layout {
-    display: grid;
-    grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
-    gap: 3rem;
-    max-width: 800px;
-    margin: 2rem auto 0 auto;
-}
+    .footer-layout {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 3rem;
+        padding: 2rem 7rem;
+        margin-top: 4rem;
+        border-top: 1px solid var(--color-primary);
+        margin-bottom: 1rem;
+    }
 
-.contact-info,
-.contact-hours {
-    padding: 2rem;
-    width: 100%;
-}
+    .footer-layout p {
+        margin: 0;
+    }
 
-.contact-info address {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
+    .footer-contact,
+    .footer-social,
+    .footer-copy {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-style: normal;
+    }
 
-.contact-info address p {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: center;
-    font-style: normal;
-    color: var(--color-primary);
-}
+    .footer-copy {
+        line-height: 1.2;
+    }
 
-.contact-label {
-    text-transform: uppercase;
-}
+    .footer-contact-content {
+        text-align: left;
+    }
 
+    .footer-social>div {
+        display: flex;
+        gap: 2rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 
-.contact-hours {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 1.6;
-}
+    .footer-social img {
+        margin: 0;
+        max-width: 2rem;
+        filter: invert(100%);
+    }
 
-.hours-table {
-    width: 100%;
-    max-width: 400px;
-}
-
-.hours-table th {
-    text-align: left;
-    font-weight: 400;
-}
-
-
-.contact-map {
-    grid-column: span 2;
-    text-align: center;
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.contact-map .map-iframe {
-    width: 100%;
-    max-width: 100%;
-    height: 300px;
-    display: block;
-    border: 0;
+    .footer-social a {
+        padding: 0;
+    }
 }
 
 .reservation-form {
@@ -370,54 +337,4 @@
 .menu-item-price {
     margin-right: 2rem;
     letter-spacing: 0.2rem;
-}
-
-.footer-layout {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 3rem;
-    padding: 2rem 7rem;
-    margin-top: 4rem;
-    border-top: 1px solid var(--color-primary);
-    margin-bottom: 1rem;
-}
-
-.footer-layout p {
-    margin: 0;
-}
-
-.footer-contact,
-.footer-social,
-.footer-copy {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-style: normal;
-}
-
-.footer-copy {
-    line-height: 1.2;
-}
-
-.footer-contact-content {
-    text-align: left;
-}
-
-.footer-social>div {
-    display: flex;
-    gap: 2rem;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.footer-social img {
-    margin: 0;
-    max-width: 2rem;
-    filter: invert(100%);
-}
-
-.footer-social a {
-    padding: 0;
 }
