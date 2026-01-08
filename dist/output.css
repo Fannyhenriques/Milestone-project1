@@ -10,8 +10,6 @@
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-sm: 0.875rem;
-    --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
@@ -23,10 +21,7 @@
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-light: 300;
-    --font-weight-normal: 400;
     --font-weight-medium: 500;
-    --tracking-wide: 0.025em;
-    --tracking-wider: 0.05em;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -180,9 +175,6 @@
   }
 }
 @layer utilities {
-  .col-span-1 {
-    grid-column: span 1 / span 1;
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -201,9 +193,6 @@
   .flex {
     display: flex;
   }
-  .grid {
-    display: grid;
-  }
   .hidden {
     display: none;
   }
@@ -212,9 +201,6 @@
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
-  }
-  .h-\[300px\] {
-    height: 300px;
   }
   .max-h-\[50vh\] {
     max-height: 50vh;
@@ -225,41 +211,20 @@
   .max-w-\[150px\] {
     max-width: 150px;
   }
-  .max-w-\[400px\] {
-    max-width: 400px;
-  }
   .max-w-\[600px\] {
     max-width: 600px;
-  }
-  .max-w-\[800px\] {
-    max-width: 800px;
   }
   .max-w-\[1000px\] {
     max-width: 1000px;
   }
-  .max-w-full {
-    max-width: 100%;
-  }
   .flex-2 {
     flex: 2;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-\[120px_1fr\] {
-    grid-template-columns: 120px 1fr;
   }
   .flex-col {
     flex-direction: column;
   }
   .items-center {
     align-items: center;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .justify-center {
     justify-content: center;
@@ -272,16 +237,6 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
-  }
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
-  }
-  .space-y-4 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
-    }
   }
   .rounded {
     border-radius: 0.25rem;
@@ -306,17 +261,11 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
-  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
-  }
-  .pl-2 {
-    padding-left: calc(var(--spacing) * 2);
   }
   .text-center {
     text-align: center;
@@ -332,18 +281,8 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
-  .font-normal {
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
-  }
   .text-white {
     color: var(--color-white);
-  }
-  .uppercase {
-    text-transform: uppercase;
-  }
-  .not-italic {
-    font-style: normal;
   }
   .sm\:flex-row {
     @media (width >= 40rem) {
@@ -383,16 +322,6 @@
   .md\:text-center {
     @media (width >= 48rem) {
       text-align: center;
-    }
-  }
-  .lg\:col-span-2 {
-    @media (width >= 64rem) {
-      grid-column: span 2 / span 2;
-    }
-  }
-  .lg\:grid-cols-2 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:text-center {
@@ -803,6 +732,60 @@
     padding: calc(var(--spacing) * 0);
   }
 }
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+  gap: 3rem;
+  max-width: 800px;
+  margin: 2rem auto 0 auto;
+}
+.contact-info, .contact-hours {
+  padding: 2rem;
+  width: 100%;
+}
+.contact-info address {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.contact-info address p {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  font-style: normal;
+  color: var(--color-primary);
+}
+.contact-label {
+  text-transform: uppercase;
+}
+.contact-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+.hours-table {
+  width: 100%;
+  max-width: 400px;
+}
+.hours-table th {
+  text-align: left;
+  font-weight: 400;
+}
+.contact-map {
+  grid-column: span 2;
+  text-align: center;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+.contact-map .map-iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  display: block;
+  border: 0;
+}
 .menu-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -837,11 +820,6 @@
 .menu-item-price {
   margin-right: 2rem;
   letter-spacing: 0.2rem;
-}
-@property --tw-space-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -927,7 +905,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-translate-x: 0;

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Hospitable Stockholm</title>
-  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="assets/style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
@@ -16,9 +16,6 @@
       <a href="index.html" class="logo">
         <span class="logo-accent">hospi</span>TABLE
       </a>
-      <button id="hamburger" class="hamburger">
-        &#9776;
-      </button>
       <nav>
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -34,23 +31,17 @@
       <h1>Contact & Opening Hours</h1>
       <p>
         We’re located in the heart of old town in Stockholm at Stortorget 2.
+        <br>
         Please contact us via phone or email for booking or questions.
       </p>
     </section>
-    <section class="contact-layout grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-[800px] mx-auto mt-8 justify-center">
-      <section class="contact-info w-full p-8 flex flex-col items-center">
+    <section class="contact-layout">
+      <section class="contact-info">
         <h2>Get in Touch</h2>
-        <address class="flex flex-col space-y-4 not-italic text-primary">
-          <p class="grid grid-cols-[120px_1fr] items-center">
-            <span class="uppercase">Phone:</span>
-            <a href="tel:0812345678">08 - 123 456 78</a>
-          </p>
-          <p class="grid grid-cols-[120px_1fr] items-center">
-            <span class="uppercase">Email:</span>
-            <a href="mailto:eat@hospitable.se">eat@hospitable.se</a>
-          </p>
-          <p class="grid grid-cols-[120px_1fr] items-start">
-            <span class="uppercase">Address:</span>
+        <address>
+          <p><span class="contact-label">Phone:</span> <a href="tel:0812345678">08 - 123 456 78</a></p>
+          <p><span class="contact-label">Email:</span> <a href="mailto:eat@hospitable.se">eat@hospitable.se</a></p>
+          <p><span class="contact-label">Address:</span>
             <a href="https://www.google.com/maps?q=Stortorget+2,+111+29+Stockholm" target="_blank"
               rel="noopener noreferrer">
               Stortorget 2<br>
@@ -60,50 +51,50 @@
           </p>
         </address>
       </section>
-      <section class="contact-hours justify-center w-full p-8 flex flex-col items-center text-primary">
+      <section class="contact-hours">
         <h2>Opening Hours</h2>
-        <table class="hours-table w-full max-w-[400px] border-collapse">
+        <table class="hours-table">
           <thead>
-            <tr class="text-left font-normal">
-              <th class="pl-2">Day</th>
+            <tr>
+              <th>Day</th>
               <th>Opening Hours</th>
             </tr>
           </thead>
-          <tbody class="text-primary">
+          <tbody>
             <tr>
-              <td class="pl-2">Monday</td>
+              <td>Monday</td>
               <td>12:00 PM – 11:00 PM</td>
             </tr>
             <tr>
-              <td class="pl-2">Tuesday</td>
+              <td>Tuesday</td>
               <td>12:00 PM – 11:00 PM</td>
             </tr>
             <tr>
-              <td class="pl-2">Wednesday</td>
+              <td>Wednesday</td>
               <td>12:00 PM – 11:00 PM</td>
             </tr>
             <tr>
-              <td class="pl-2">Thursday</td>
+              <td>Thursday</td>
               <td>12:00 PM – 1:00 AM</td>
             </tr>
             <tr>
-              <td class="pl-2">Friday</td>
+              <td>Friday</td>
               <td>12:00 PM – 1:00 AM</td>
             </tr>
             <tr>
-              <td class="pl-2">Saturday</td>
+              <td>Saturday</td>
               <td>12:00 PM – 1:00 AM</td>
             </tr>
             <tr>
-              <td class="pl-2">Sunday</td>
+              <td>Sunday</td>
               <td>12:00 PM – 9:00 PM</td>
             </tr>
           </tbody>
         </table>
       </section>
-      <section class="contact-map col-span-1 lg:col-span-2 text-center">
+      <section class="contact-map">
         <h2 class="section-subtitle">Find Us Here</h2>
-        <iframe class="map-iframe w-full max-w-full h-[300px] border-0"
+        <iframe class="map-iframe"
           src="https://www.google.com/maps?q=Stortorget,+Gamla+Stan,+Stockholm&hl=en&z=16&output=embed" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
