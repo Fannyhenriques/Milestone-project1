@@ -654,82 +654,44 @@
     }
   }
   .footer-layout {
-    margin-top: calc(var(--spacing) * 16);
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 2rem 7rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  .footer-layout p {
+    margin: 0;
+  }
+  .footer-contact, .footer-social, .footer-copy {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: calc(var(--spacing) * 8);
-    border-top-style: var(--tw-border-style);
-    border-top-width: 1px;
-    padding-inline: calc(var(--spacing) * 6);
-    padding-top: calc(var(--spacing) * 6);
-    padding-bottom: calc(var(--spacing) * 4);
-    border-color: var(--color-primary);
-    @media (width >= 48rem) {
-      flex-direction: row;
-    }
-    @media (width >= 48rem) {
-      align-items: center;
-    }
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 12);
-    }
-    @media (width >= 48rem) {
-      padding-top: calc(var(--spacing) * 8);
-    }
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 8);
-    }
-    @media (width >= 64rem) {
-      padding-inline: 7rem;
-    }
-    @media (width >= 64rem) {
-      padding-bottom: calc(var(--spacing) * 4);
-    }
-  }
-  .footer-contact, .footer-social, .footer-copy {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     font-style: normal;
-    @media (width >= 48rem) {
-      align-items: center;
-    }
   }
   .footer-copy {
-    @media (width >= 48rem) {
-      align-items: center;
-    }
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    --tw-leading: 1.2;
     line-height: 1.2;
-    @media (width >= 48rem) {
-      align-items: center;
-    }
   }
   .footer-contact-content {
     text-align: left;
   }
   .footer-social>div {
-    margin-block: auto;
     display: flex;
-    gap: calc(var(--spacing) * 8);
+    gap: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .footer-social img {
-    max-width: calc(var(--spacing) * 7);
-    --tw-invert: invert(100%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-    margin: calc(var(--spacing) * 0);
-    @media (width >= 64rem) {
-      max-width: calc(var(--spacing) * 8);
-    }
+    margin: 0;
+    max-width: 2rem;
+    filter: invert(100%);
   }
   .footer-social a {
-    padding: calc(var(--spacing) * 0);
+    padding: 0;
   }
 }
 .contact-layout {
@@ -845,63 +807,6 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-blur {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-brightness {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-contrast {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-grayscale {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-hue-rotate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-invert {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-opacity {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-saturate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-sepia {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-drop-shadow-size {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -910,20 +815,6 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
-      --tw-leading: initial;
-      --tw-blur: initial;
-      --tw-brightness: initial;
-      --tw-contrast: initial;
-      --tw-grayscale: initial;
-      --tw-hue-rotate: initial;
-      --tw-invert: initial;
-      --tw-opacity: initial;
-      --tw-saturate: initial;
-      --tw-sepia: initial;
-      --tw-drop-shadow: initial;
-      --tw-drop-shadow-color: initial;
-      --tw-drop-shadow-alpha: 100%;
-      --tw-drop-shadow-size: initial;
     }
   }
 }
