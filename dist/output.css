@@ -1,5 +1,4 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -169,20 +168,11 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
-  }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
   .block {
     display: block;
-  }
-  .flex {
-    display: flex;
   }
   .hidden {
     display: none;
@@ -190,67 +180,17 @@
   .table {
     display: table;
   }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
   .max-h-\[50vh\] {
     max-height: 50vh;
   }
   .w-full {
     width: 100%;
   }
-  .max-w-\[150px\] {
-    max-width: 150px;
-  }
-  .max-w-\[600px\] {
-    max-width: 600px;
-  }
   .max-w-\[1000px\] {
     max-width: 1000px;
   }
-  .flex-2 {
-    flex: 2;
-  }
-  .flex-col {
-    flex-direction: column;
-  }
-  .items-center {
-    align-items: center;
-  }
-  .justify-center {
-    justify-content: center;
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
-  }
-  .rounded {
-    border-radius: 0.25rem;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-0 {
-    border-style: var(--tw-border-style);
-    border-width: 0px;
-  }
-  .border-gray-300 {
-    border-color: var(--color-gray-300);
-  }
   .object-cover {
     object-fit: cover;
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
@@ -258,57 +198,8 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
-  .text-center {
-    text-align: center;
-  }
   .text-left {
     text-align: left;
-  }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-  .font-medium {
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
-  }
-  .text-white {
-    color: var(--color-white);
-  }
-  .sm\:flex-row {
-    @media (width >= 40rem) {
-      flex-direction: row;
-    }
-  }
-  .sm\:gap-4 {
-    @media (width >= 40rem) {
-      gap: calc(var(--spacing) * 4);
-    }
-  }
-  .md\:flex-1 {
-    @media (width >= 48rem) {
-      flex: 1;
-    }
-  }
-  .md\:flex-row {
-    @media (width >= 48rem) {
-      flex-direction: row;
-    }
-  }
-  .md\:items-center {
-    @media (width >= 48rem) {
-      align-items: center;
-    }
-  }
-  .md\:justify-between {
-    @media (width >= 48rem) {
-      justify-content: space-between;
-    }
-  }
-  .md\:gap-4 {
-    @media (width >= 48rem) {
-      gap: calc(var(--spacing) * 4);
-    }
   }
   .md\:text-center {
     @media (width >= 48rem) {
@@ -639,20 +530,30 @@ button {
   margin-right: 2rem;
   letter-spacing: 0.2rem;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
+.reservation-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 600px;
+  margin: 0 auto;
+  border: none;
 }
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-font-weight: initial;
-    }
-  }
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-row label {
+  flex: 1;
+  max-width: 150px;
+}
+.form-row input, .form-row select {
+  flex: 2;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
