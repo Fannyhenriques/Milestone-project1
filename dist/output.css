@@ -10,17 +10,10 @@
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-base: 1rem;
-    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
-    --font-weight-light: 300;
     --font-weight-medium: 500;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -380,130 +373,6 @@
   }
 }
 @layer component {
-  header */ header {
-    position: sticky;
-    top: calc(var(--spacing) * 0);
-    z-index: 50;
-    background-color: var(--color-background);
-  }
-  .layout-wrapper-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-    padding-inline: calc(var(--spacing) * 6);
-    padding-block: calc(var(--spacing) * 2);
-    border-color: var(--color-primary);
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 6);
-    }
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 1);
-    }
-    @media (width >= 80rem) {
-      padding-inline: calc(var(--spacing) * 12);
-    }
-    @media (width >= 80rem) {
-      padding-block: calc(var(--spacing) * 1);
-    }
-  }
-  .logo {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
-    @media (width >= 64rem) {
-      font-size: 2rem;
-    }
-    @media (width >= 80rem) {
-      font-size: 2.5rem;
-    }
-  }
-  .logo-accent {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-    @media (width >= 64rem) {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-    @media (width >= 80rem) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
-    }
-  }
-  .hamburger {
-    z-index: 50;
-    display: block;
-    cursor: pointer;
-    padding: calc(var(--spacing) * 2);
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-    @media (width >= 64rem) {
-      display: none;
-    }
-  }
-  nav {
-    display: none;
-    @media (width >= 64rem) {
-      display: flex;
-    }
-    @media (width >= 64rem) {
-      width: auto;
-    }
-    @media (width >= 64rem) {
-      flex-direction: row;
-    }
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 4);
-    }
-  }
-  nav a {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
-    text-transform: uppercase;
-    @media (width >= 64rem) {
-      font-size: 0.9rem;
-    }
-    @media (width >= 80rem) {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-  nav a:hover {
-    color: var(--color-primary-hover);
-  }
-  .navlink-res {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-    padding: calc(var(--spacing) * 2);
-    border-color: var(--color-primary);
-  }
-  .navlink-res:hover {
-    border-color: var(--color-primary-hover);
-  }
-  .hero-container {
-    position: relative;
-    max-height: 80vh;
-    width: 100%;
-    overflow: hidden;
-  }
-  .hero-container::after {
-    content: "";
-    position: absolute;
-    top: calc(var(--spacing) * 0);
-    left: calc(var(--spacing) * 0);
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .hero-img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom;
-  }
   .content-box {
     margin-inline: auto;
     max-width: 90%;
@@ -561,6 +430,65 @@
   .footer-social a {
     padding: 0;
   }
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-background);
+}
+.layout-wrapper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  border-bottom: 1px solid var(--color-primary);
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.logo-accent {
+  font-size: 2.25rem;
+}
+nav {
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: var(--color-primary-hover);
+}
+.navlink-res {
+  border: 1px solid var(--color-primary);
+  padding: 0.5rem;
+}
+.navlink-res:hover {
+  border-color: var(--color-primary-hover);
+}
+.hero-container {
+  position: relative;
+  width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+}
+.hero-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: bottom center;
 }
 .hero-buttons {
   position: absolute;

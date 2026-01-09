@@ -67,68 +67,6 @@
 
 @layer component {
 
-  header */ header {
-    @apply sticky top-0 z-50;
-    background-color: var(--color-background);
-  }
-
-  .layout-wrapper-header {
-    @apply flex justify-between items-center px-6 py-2 border-b;
-    border-color: var(--color-primary);
-    @apply lg:px-6 lg:py-1;
-    @apply xl:px-12 xl:py-1;
-  }
-
-  /* logo */
-  .logo {
-    @apply text-2xl font-light lg:text-[2rem] xl:text-[2.5rem];
-  }
-
-  .logo-accent {
-    @apply text-xl lg:text-2xl xl:text-4xl;
-  }
-
-  /* hamburger */
-  .hamburger {
-    @apply block text-2xl p-2 cursor-pointer z-50 lg:hidden;
-  }
-
-  /* nav-bar */
-  nav {
-    @apply hidden lg:flex lg:flex-row lg:gap-4 lg:w-auto;
-  }
-
-  nav a {
-    @apply text-base uppercase lg:text-[0.9rem] xl:text-lg;
-  }
-
-  nav a:hover {
-    color: var(--color-primary-hover);
-  }
-
-  .navlink-res {
-    @apply border p-2;
-    border-color: var(--color-primary);
-  }
-
-  .navlink-res:hover {
-    border-color: var(--color-primary-hover);
-  }
-
-  /* hero */
-  .hero-container {
-    @apply relative w-full overflow-hidden max-h-[80vh];
-  }
-
-  .hero-container::after {
-    content: "";
-    @apply absolute top-0 left-0 w-full h-full;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .hero-img {
-    @apply w-full h-full object-cover block object-bottom;
-  }
 
   .content-box {
     @apply mx-auto max-w-[90%] p-8;
@@ -190,6 +128,85 @@
   .footer-social a {
     padding: 0;
   }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-background);
+}
+
+.layout-wrapper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+/* logo */
+.logo {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.logo-accent {
+  font-size: 2.25rem;
+}
+
+/* hamburger */
+/* .hamburger {
+  @apply block text-2xl p-2 cursor-pointer z-50 lg:hidden;
+} */
+
+/* nav-bar */
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--color-primary-hover);
+}
+
+.navlink-res {
+  border: 1px solid var(--color-primary);
+  padding: 0.5rem;
+}
+
+.navlink-res:hover {
+  border-color: var(--color-primary-hover);
+}
+
+/* hero */
+.hero-container {
+  position: relative;
+  width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.hero-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: bottom center;
 }
 
 .hero-buttons {
