@@ -92,6 +92,20 @@ a {
   font-size: var(--font-xs);
 }
 
+@media (max-width: 425px) {
+  h1 {
+    font-size: var(--font-s);
+  }
+
+  h2 {
+    font-size: var(--font-s);
+  }
+
+  a {
+    font-size: var(--font-xxs);
+  }
+}
+
 /* =====================
    LAYOUT HELPERS
 ===================== */
@@ -434,7 +448,7 @@ button {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
   gap: var(--spacing-l);
   max-width: 800px;
   margin: var(--spacing-md) auto 0 auto;
@@ -444,6 +458,12 @@ button {
 .contact-hours {
   padding: var(--spacing-md);
   width: 100%;
+}
+
+.contact-hours {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
 }
 
 .contact-info address {
@@ -464,16 +484,10 @@ button {
   text-transform: uppercase;
 }
 
-.contact-hours {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1.6;
-}
-
 .hours-table {
   width: 100%;
   max-width: 400px;
+  border-collapse: collapse;
 }
 
 .hours-table th {
@@ -481,21 +495,79 @@ button {
   font-weight: 400;
 }
 
-
 .contact-map {
   grid-column: span 2;
   text-align: center;
-  display: block;
   max-width: 100%;
   object-fit: cover;
+  box-sizing: border-box;
 }
 
-.contact-map .map-iframe {
-  width: 100%;
+/* bug not solved */
+.map-iframe {
+  width: 95%;
   max-width: 100%;
   height: 300px;
   display: block;
   border: 0;
+}
+
+@media (max-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin: var(--spacing-xs) auto 0 auto;
+  }
+
+  .contact-info,
+  .contact-hours {
+    text-align: left;
+    margin: 0 auto;
+    align-items: center;
+    width: auto;
+    padding: var(--spacing-s);
+  }
+
+  .contact-heading {
+    text-align: center;
+  }
+
+  .contact-info address p {
+    margin: var(--spacing-xxs);
+  }
+
+  .hours-table th,
+  .hours-table td {
+    padding: var(--spacing-xs) var(--spacing-s);
+  }
+
+  .contact-map {
+    grid-column: auto;
+    margin-top: var(--spacing-md);
+  }
+
+  .map-iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .contact-info,
+  .contact-hours {
+    padding: var(--spacing-xs);
+  }
+
+  .hours-table th,
+  .hours-table td {
+    padding: var(--spacing-xxs) var(--spacing-xs);
+    font-size: var(--font-xxs);
+  }
+
+  .contact-label {
+    font-size: var(--font-xxs);
+  }
+
 }
 
 /* =====================
@@ -587,4 +659,36 @@ button {
 
 .footer-social a {
   padding: 0;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    display: none;
+  }
+
+  .footer-layout {
+    display: none;
+  }
+
+  .footer-contact,
+  .footer-social,
+  .footer-copy {
+    display: none;
+  }
+
+  .footer-contact-content {
+    display: none;
+  }
+
+  .footer-social>div {
+    display: none;
+  }
+
+  .footer-social img {
+    display: none;
+  }
+
+  .footer-social a {
+    display: none;
+  }
 }
