@@ -1,73 +1,165 @@
-# Milestone-project1
+# Hospitable restaurant 
 
+Short description of the project.
 
-      <a href="index.html" class="logo">
-        <span class="logo-accent">hospi</span>TABLE
-      </a>
-      <button id="hamburger" class="hamburger">
-        &#9776;
-      </button>
-      <nav id="nav" aria-label="main navigation">
-      <div> 
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="events.html">Events</a>
-        <a class="navlink-res" href="reservations.html">Reservations</a>
-        </div>
-      </nav>
-    </div>
+[View live project here](https://fannyhenriques.github.io/milestone-project-1/)  
 
-    nav {
-  display: flex;
-  gap: 1rem;
+![Project mockup](#)
 
-  &_menu @media (max-width: 1024px) {
-    nav {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: white;
-      flex-direction: column;
-      width: 100%;
-      padding: 1.5rem;
-    }
+---
 
-    .hamburger {
-      display: block;
-    }
-  }
-}
+## Table of Contents
+1. [User Experience](#user-experience)
+   - [Goals](#goals)
+     - [Visitor Goals](#visitor-goals)
+     - [Business Goals](#business-goals)
+2. [Design](#design)
+   - [Wireframes](#wireframes)
+   - [Layout and Styling](#layout-and-styling)
+   - [Colour Scheme](#colour-scheme)
+   - [Imagery](#imagery)
+   - [Typography](#typography)
+   - [Icons & Favicon](#icons--favicon)
+3. [Features](#features)
+   - [Scope](#scope)
+     - [Minimum Viable Product](#minimum-viable-product)
+     - [Additional Features](#additional-features)
+     - [Future Ideas](#future-ideas)
+   - [Page Elements](#page-elements)
+     - [All Pages](#all-pages)
+     - [Homepage](#homepage)
+     - [About Page](#about-page)
+     - [Booking / Form Page](#booking--form-page)
+4. [Technologies Used](#technologies-used)
+   - [Languages](#languages)
+   - [Frameworks & Libraries](#frameworks--libraries)
+   - [Tools & Platforms](#tools--platforms)
+5. [Development & Deployment](#development--deployment)
+   - [Git Commits](#git-commits)
+   - [GitHub Pages](#github-pages)
+6. [Testing](#testing)
+   - [Validation](#validation)
+   - [Manual Testing](#manual-testing)
+   - [Known Bugs](#known-bugs)
+7. [Credits](#credits)
+   - [Code](#code)
+   - [Content](#content)
+   - [Media](#media)
+   - [Acknowledgements](#acknowledgements)
 
+---
 
-/* hamburger */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+## User Experience
 
-/* nav-bar */
-nav {
-  display: flex;
-  gap: 1rem;
+### Goals
 
-  @media (max-width: 1024px) {
-    nav {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: white;
-      flex-direction: column;
-      width: 100%;
-      padding: 1.5rem;
-    }
+#### Visitor Goals
+- 
 
-    .hamburger {
-      display: block;
-    }
-  }
-}
+#### Business Goals
+- 
+
+---
+
+## Design
+
+### LucidApp
+- Desktop: 
+![Printscreen desktop](/assets/images/lucid-print-desktop.png)
+- Mobile:  
+
+### Layout and Styling
+- 
+
+### Colour Scheme
+- 
+
+### Imagery
+- 
+
+### Typography
+- 
+
+### Icons & Favicon
+- 
+
+---
+
+## Features
+
+### Scope
+
+#### Minimum Viable Product
+- 
+
+#### Additional Features
+- 
+
+#### Future Ideas
+- 
+
+### Page Elements
+
+#### All Pages
+- 
+
+#### Homepage
+- 
+
+#### About Page
+- 
+
+#### Booking / Form Page
+- 
+
+---
+
+## Technologies Used
+
+### Languages
+- 
+
+### Frameworks & Libraries
+- 
+
+### Tools & Platforms
+- 
+
+---
+
+## Development & Deployment
+
+### Git Commits
+- 
+
+### GitHub Pages
+- 
+
+---
+
+## Testing
+
+### Validation
+- 
+
+### Manual Testing
+- 
+
+### Known Bugs
+- 
+
+---
+
+## Credits
+
+### Code
+- 
+
+### Content
+- 
+
+### Media
+- 
+
+### Acknowledgements
+- 
