@@ -301,7 +301,7 @@ nav a:hover {
   padding: var(--spacing-s);
   margin: var(--spacing-s);
   display: inline-flex;
-  width: 220px;
+  width: 210px;
   justify-content: center;
   text-transform: uppercase;
 }
@@ -339,16 +339,14 @@ button {
 }
 
 @media (max-width: 1024px) {
-  .btn-container {
-    padding: 0;
-  }
-
   .btn {
-    margin-top: var(--spacing-s);
-    margin-bottom: var(--spacing-s);
-    margin-left: 0;
-    margin-right: 0;
+    margin: var(--spacing-xs);
+  }
+}
 
+@media (max-width: 425px) {
+  .btn {
+    margin: var(--spacing-s) auto;
   }
 }
 
