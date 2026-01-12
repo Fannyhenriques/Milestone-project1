@@ -65,11 +65,12 @@ Short description of the project.
 
 ### LucidApp
 - Desktop: 
-![Printscreen desktop](/assets/images/lucid-print-desktop.png)
-- Tablet: 
-![Printscreen tablet](/assets/images/lucid-printscreen-tablet.png)
-- Mobile:  
-![Printscreen tablet](/assets/images/lucid-printscreen-mobile-png.png)
+<img src="/assets/images/lucid-printscreen-desktop.png" alt="Desktop" width="300"/>
+- Tablet
+<img src="/assets/images/lucid-printscreen-tablet.png" alt="Tablet" width="200"/>
+- Mobile
+<img src="/assets/images/lucid-printscreen-mobile-png.png" alt="Mobile" width="150"/>
+
 
 ### Layout and Styling
 - 
