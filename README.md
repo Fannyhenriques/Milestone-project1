@@ -66,7 +66,10 @@ Short description of the project.
 ### LucidApp
 - Desktop: 
 ![Printscreen desktop](/assets/images/lucid-print-desktop.png)
+- Tablet: 
+![Printscreen tablet](/assets/images/lucid-printscreen-tablet.png)
 - Mobile:  
+![Printscreen tablet](/assets/images/lucid-printscreen-mobile-png.png)
 
 ### Layout and Styling
 - 
