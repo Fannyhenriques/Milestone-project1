@@ -733,7 +733,7 @@ button {
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
 
   .footer-layout {
     flex-direction: column;
