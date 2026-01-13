@@ -2,6 +2,10 @@
 
 Short description of the project.
 
+<p align=""center>
+<img src="/assets/images/responsive-design.png" alt="responsive design" width="700"/>
+</p>
+
 [View live project here](https://fannyhenriques.github.io/milestone-project-1/)  
 
 
@@ -488,6 +492,7 @@ The live site can be found here: link
 
 
 - Responsiveness was altså tested manually using Chrome DevTools by simulating different screen sizes, including desktop, tablet, and mobile devices. Layouts were adjusted where needed to ensure content remained readable and functional.
+And: https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Findex.html&width=1400&height=700
 
 
 ### Known Bugs
