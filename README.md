@@ -1,6 +1,8 @@
-# Hospitable restaurant 
+# hospiTABLE restaurant 
 
-Short description of the project.
+Hospitable is a fictional restaurant website designed to bring the dining experience to life online. Built as a mockup for friends dreaming of opening their own restaurant, the site showcases delicious food, a welcoming atmosphere, and a commitment to sustainability. Even though this is a static front-end website, Hospitable aims to provide an engaging experience for visitors across devices. The goal is to bring visitors into the restaurant’s world, letting them get a feel for the atmosphere and get excited to visit in person. They can also explore the daily-changing menu, catering options, and special events like live music nights.
+[View live project here](https://fannyhenriques.github.io/milestone-project-1/)  
+
 
 <p align="center">
 <img src="/assets/images/responsive-design.png" alt="responsive design" width="900"/>
