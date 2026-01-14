@@ -415,8 +415,10 @@ button {
   padding: var(--spacing-xl) var(--spacing-md);
 }
 
-.menu-section h3 {
+.menu-section h2 {
   text-align: left;
+  font-size: var(--font-s);
+  font-weight: 100;
 }
 
 .menu-section img {
@@ -461,7 +463,7 @@ button {
     padding: var(--spacing-md) var(--spacing-s);
   }
 
-  .menu-section h3 {
+  .menu-section h2 {
     text-align: center;
   }
 

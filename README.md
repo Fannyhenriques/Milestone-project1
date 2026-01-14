@@ -2,8 +2,8 @@
 
 Short description of the project.
 
-<p align=""center>
-<img src="/assets/images/responsive-design.png" alt="responsive design" width="700"/>
+<p align="center">
+<img src="/assets/images/responsive-design.png" alt="responsive design" width="900"/>
 </p>
 
 [View live project here](https://fannyhenriques.github.io/milestone-project-1/)  
