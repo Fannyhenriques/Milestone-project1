@@ -3,9 +3,7 @@
 ===================== */
 
 :root {
-  /* base color   */
   --color-background: rgb(12, 12, 12);
-  /* text/highlights/borders */
   --color-primary: rgba(196, 156, 64, 1);
   --color-primary-hover: #edc193;
   --color-secondary: rgba(255, 255, 255, 1);
@@ -52,7 +50,6 @@ img {
 /* =====================
    TYPOGRAPHY
 ===================== */
-
 h1,
 h2,
 h3,
@@ -140,7 +137,6 @@ a {
 ===================== */
 
 /* === HEADER + NAV === */
-
 .layout-wrapper-header {
   display: flex;
   align-items: center;
@@ -289,7 +285,6 @@ nav a:hover {
 }
 
 /* === BUTTONS === */
-
 .btn-container {
   margin-top: var(--spacing-s);
   padding: var(--spacing-s);
@@ -353,7 +348,6 @@ button {
 }
 
 /* === INTRO (reusable section) === */
-
 .intro {
   display: flex;
   justify-content: center;
@@ -408,7 +402,6 @@ button {
 /* =====================
    PAGE: MENU
 ===================== */
-
 .menu-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -480,7 +473,6 @@ button {
 /* =====================
    PAGE: CONTACT
 ===================== */
-
 .contact-layout {
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 1fr));
@@ -538,7 +530,6 @@ button {
   box-sizing: border-box;
 }
 
-/* bug not solved */
 .map-iframe {
   width: 95%;
   max-width: 100%;
@@ -607,7 +598,6 @@ button {
 /* =====================
    PAGE: BOOK
 ===================== */
-
 .reservation-form {
   display: flex;
   flex-direction: column;
@@ -644,7 +634,6 @@ button {
 }
 
 @media (max-width: 768px) {
-
   .reservation-fieldset {
     max-width: 100%;
     flex-shrink: 1;
@@ -653,13 +642,11 @@ button {
   .form-row label {
     font-size: var(--font-xxs);
   }
-
 }
 
 /* =====================
    FOOTER
 ===================== */
-
 .footer-layout {
   display: flex;
   align-items: stretch;
@@ -692,8 +679,8 @@ button {
 }
 
 .contact-link {
-  padding: 0;
-  margin: 0;
+  padding: var(--spacing-xxs);
+  margin: var(--spacing-xxs);
 }
 
 .footer-social>div {
@@ -728,15 +715,9 @@ button {
     display: flex;
     flex-direction: column;
   }
-
-  .footer-contact,
-  .footer-copy {
-    font-size: var(--font-xxs);
-  }
 }
 
 @media (max-width: 768px) {
-
   .footer-layout {
     flex-direction: column;
     justify-content: center;
