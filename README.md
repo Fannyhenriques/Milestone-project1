@@ -47,7 +47,7 @@ Hospitable is a fictional restaurant website designed to bring the dining experi
 6. [Reflection & Future Improvements](#reflection--future-improvements)
    - [Responsive Design](#responsive-design)
    - [Overall Layout](#overall-layout)
-   - [Submit Form](#submit-form)
+   - [Booking & Submit Form](#booking--submit-form)
 7. [Testing](#testing)
    - [Validation](#validation)
    - [Manual Testing](#manual-testing)
@@ -470,9 +470,9 @@ The live site can be found [here:](https://fannyhenriques.github.io/milestone-pr
 * The contact section could be further refined if more time were available. While the current layout functions well, the content could be aligned more cleanly within the grid, with improved spacing toward the container edges.
 * Footer:
 
-### Submit form
+### Booking & submit form
+* Currently, the booking form accepts all dates from 16/01/2026 onward because JavaScript is not implemented. This means users could technically select past dates. In the future, it would be ideal to add JavaScript to dynamically check the current date and restrict bookings to future dates only.
 * As this project is built using static HTML and CSS, the booking form does not process submissions in a realistic way, as this would require JavaScript or a backend solution. Currently, submitting the form simply refreshes the page.
-
 * From a user experience perspective, providing visual feedback after submission would improve usability. With more time, a separate confirmation page (e.g. confirmation.html) could be added to clearly inform users that their booking request has been sent.    
 ---
 
