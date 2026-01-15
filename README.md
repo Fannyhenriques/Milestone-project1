@@ -397,6 +397,8 @@ This responsive adjustment provided a practical and accessible solution within t
 <img src="/assets/images/booking-form.png" alt="booking form screenshot" width="500" heigh="auto"/>
 </p>
 
+- The reservation form uses a `<fieldset>` with a `<legend>` for the radio button group to ensure semantic grouping and accessibility. Other input fields are wrapped in `<div>` elements for layout and styling, keeping the structure simple and maintainable. An outer `<fieldset>` is used solely for consistent visual grouping, without affecting semantic meaning.
+
 ---
 
 ## Technologies Used
