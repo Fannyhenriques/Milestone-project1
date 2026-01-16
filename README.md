@@ -509,27 +509,30 @@ These elements were replaced with `<div>` where appropriate to better reflect th
 
 
 
-| **Page**          | **W3C HTML Validator Result** | **Link**                                                                                                                       |
-| ----------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| Index.html        | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Findex.html)        |
-| Menu.html         | Fail                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fmenu.html)         |
-| About.html        | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fabout.html)        |
-| Contact.html      | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fcontact.html)      |
-| Events.html       | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fevents.html)       |
-| Reservations.html | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Freservations.html) |
-| Book.html         | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fbook.html)         |
+| **Page**              | **W3C HTML Validator Result** | **Link**                                                                                                                       |
+| --------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Index.html            | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Findex.html)        |
+| Menu.html             | Fail                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fmenu.html)         |
+| About.html            | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fabout.html)        |
+| Contact.html          | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fcontact.html)      |
+| Events.html           | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fevents.html)       |
+| Reservations.html     | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Freservations.html) |
+| Book.html             | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fbook.html)         |
+| Confirmation.html     | Pass                          | [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fconfirmation.html) |
+|                                             |         |                                                                        |
 
 
 
-| **Page**          | **W3C CSS Validator Result** | **Link**                                                                                                                                     
-| ----------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Index.html        | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)                  |
-| Menu.html         | pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fmenu.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)         |
-| About.html        | pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fabout.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)        |
-| Contact.html      | pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)      |
-| Events.html       | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fevents.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)       |
-| Reservations.html | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Freservations.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) |
-| Book.html         | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fbook.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)         |
+| **Page**              | **W3C CSS Validator Result** | **Link**                                                                                                                                                                                                                                                                                                                                              |
+| --------------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Index.html            | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)                                                                                                                                                          |
+| Menu.html             | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fmenu.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)                                                                                                                                                 |
+| About.html            | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fabout.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)                                                                                                                                                |
+| Contact.html          | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)                                                                                                                                              |
+| Events.html           | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fevents.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)                                                                                                                                               |
+| Reservations.html     | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Freservations.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)                                                                                                                                         |
+| Book.html             | Pass                         | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fbook.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)                                                                                                                                                 |
+| Confirmation.html     | Pass                     | [Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Fconfirmation.html%3Ftime%3Ddinner%26date%3D2026-01-17%26people%3D3%26first_name%3DFanny%26last_name%3Dhenriques%26email%3Dfanny.henriques%2540hotmail.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) |
 
 
 
@@ -537,21 +540,21 @@ These elements were replaced with `<div>` where appropriate to better reflect th
 
 - All test cases listed below were executed and passed successfully.
 
-| Page / Section           | Test Case                                                                                 | Expected Result                                                                        |
-| ------------------------ | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| All Pages                | Test navbar links including logo-link to index.html                                       | User navigates to the correct page when clicking links                                 |
-| All Pages                | Test social media links and address links in footer                                       | Links open correct social media sites or apps                                          |
-| Homepage (Hero)          | Test CTA buttons (styled links)                                                           | Links navigate to Contact and Reservations pages                                       |
-| Menu Page                | Test CTA button-links                                                                     | Links navigate to Contact and Booking pages                                            |
-| About Page               | Test CTA button-links                                                                     | Links navigate to Contact and Booking pages                                            |
-| Contact Page             | Test address links                                                                        | Opens appropriate app or map location                                                  |
-| Contact Page             | Test embedded Google map – scroll and zoom                                                | Map is interactive and scroll/zoom works correctly                                     |
-| Events Page              | Test Contact-link button                                                                  | Navigates to Contact page                                                              |
+| Page / Section           | Test Case                                                                                 | Expected Result                                                                                 |
+| ------------------------ | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| All Pages                | Test navbar links including logo-link to index.html                                       | User navigates to the correct page when clicking links                                          |
+| All Pages                | Test social media links and address links in footer                                       | Links open correct social media sites or apps                                                   |
+| Homepage (Hero)          | Test CTA buttons (styled links)                                                           | Links navigate to Contact and Reservations pages                                                |
+| Menu Page                | Test CTA button-links                                                                     | Links navigate to Contact and Booking pages                                                     |
+| About Page               | Test CTA button-links                                                                     | Links navigate to Contact and Booking pages                                                     |
+| Contact Page             | Test address links                                                                        | Opens appropriate app or map location                                                           |
+| Contact Page             | Test embedded Google map – scroll and zoom                                                | Map is interactive and scroll/zoom works correctly                                              |
+| Events Page              | Test Contact-link button                                                                  | Navigates to Contact page                                                                       |
 | Reservations Page        | Test address links                                                                        | Opens appropriate app                                                                           |
-| Booking Page (book.html) | Test form validation and submission                                                       | Blocks submission if required fields empty; allows submission if all fields are filled |
-| All Pages (Responsive)   | Check layout on desktop, tablet, mobile for navbar, hero, text/image sections, and footer | Layout adjusts correctly at different screen sizes                                     |
-|                          |                                            |                                              |
-
+| Booking Page (book.html) | Test form validation and submission                                                       | Prevents submission if required fields are empty; redirects to confirmation page when submitted |
+| Confirmation Page        | Verify confirmation message and return button                                             | Confirmation message is displayed and return button navigates back to homepage                  |
+| All Pages (Responsive)   | Check layout on desktop, tablet, mobile for navbar, hero, text/image sections, and footer | Layout adjusts correctly at different screen sizes                                              |
+|                          |                                                     |                                     |
 
 - Responsiveness was tested manually using [Chrome DevTools](https://developer.chrome.com/docs/devtools/) by simulating different screen sizes, including desktop, tablet, and mobile devices. Layouts were adjusted where needed to ensure content remained readable and functional. In addition, [Responsive Design Checker](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Ffannyhenriques.github.io%2Fmilestone-project-1%2Findex.html&width=1400&height=700) was used to further verify responsive behavior across a wide range of screen sizes.
 
