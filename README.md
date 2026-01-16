@@ -635,6 +635,7 @@ The project was primarily tested on macOS (Safari, Chrome and Firefox), where no
 
 ### Known Bugs
 - Large images affecting performance: Some large images across the site, including the homepage hero image and image on the menu page, take longer to load and can lower Lighthouse performance scores. This is a known issue that could be optimized in the future by resizing images or using responsive formats to speed up loading without compromising the visual appearance.
+- The booking form currently allows users to select a date in the past. This limitation exists because the project uses static HTML. The issue could be resolved in the future by adding JavaScript date validation to prevent invalid date selections.
 
 ---
 
