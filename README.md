@@ -48,6 +48,7 @@ Hospitable is a fictional restaurant website designed to bring the dining experi
    - [Responsive Design](#responsive-design)
    - [Overall Layout](#overall-layout)
    - [Booking & Submit Form](#booking--submit-form)
+   - [Image Performance](#image-performance)
 7. [Testing](#testing)
    - [Validation](#validation)
    - [Manual Testing](#manual-testing)
@@ -473,7 +474,10 @@ The live site can be found [here:](https://fannyhenriques.github.io/milestone-pr
 ### Booking & submit form
 * Currently, the booking form accepts all dates from 16/01/2026 onward because JavaScript is not implemented. This means users could technically select past dates. In the future, it would be ideal to add JavaScript to dynamically check the current date and restrict bookings to future dates only.
 * As this project is built using static HTML and CSS, the booking form does not process submissions in a realistic way, as this would require JavaScript or a backend solution. Currently, submitting the form simply refreshes the page.
-* From a user experience perspective, providing visual feedback after submission would improve usability. With more time, a separate confirmation page (e.g. confirmation.html) could be added to clearly inform users that their booking request has been sent.    
+* From a user experience perspective, providing visual feedback after submission would improve usability. With more time, a separate confirmation page (e.g. confirmation.html) could be added to clearly inform users that their booking request has been sent.  
+
+### Image Performance 
+* Some large images, especially the full-width hero image on the homepage, reduce the Lighthouse performance score. Future improvements could include resizing or using responsive image formats to improve load times while maintaining visual quality.
 ---
 
 ## Testing
